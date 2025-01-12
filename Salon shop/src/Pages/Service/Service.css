@@ -1,0 +1,28 @@
+.carousel-container {
+  position: relative; /* Make the container relative for absolute positioning */
+}
+
+.red-button {
+  background-color: transparent;
+  border: none; /* Remove the default border */
+  position: absolute; /* Position the buttons absolutely */
+  top: 20px; /* Adjust this value to position them higher */
+  z-index: 10; /* Ensure buttons are on top of other elements */
+}
+
+.carousel-control-prev {
+  left: 10px; /* Position the previous button */
+}
+
+.carousel-control-next {
+  right: 10px; /* Position the next button */
+}
+
+.red-button .carousel-control-prev-icon,
+.red-button .carousel-control-next-icon {
+  background-color: transparent; /* Change icon color to white for contrast */
+}
+
+.carousel-indicators > span {
+  opacity: 0;
+}

@@ -1,0 +1,98 @@
+@import "../../../variables.css";
+
+.serviceSection {
+  color: var(--color3);
+  font-family: var(--font);
+  text-align: center;
+  margin: 2rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--white);
+}
+.serviceSection > h1 {
+  font-size: 3rem;
+  margin: 1rem auto;
+}
+
+.serviceSection > hr {
+  width: 50%; /* Set width to 50% */
+  height: fit-content;
+  margin: auto; /* Center the hr and add vertical space */
+  border-top: 3px dashed red;
+}
+
+.service-cont {
+  margin: 2rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.serv-divs > h2 {
+  margin: 0.5rem auto;
+}
+.serv-divs {
+  margin: auto;
+  transition: transform 300ms; /* Specify the transition for transform */
+}
+
+.serv-divs:hover {
+  transform: scale(1.1); /* Use scale for zoom effect */
+}
+
+.servicebtn {
+  margin: 1rem auto 3rem a;
+}
+.servicebtn > h6 {
+  width: 80%;
+  margin: auto auto 3rem auto;
+  height: fit-content;
+}
+
+.servicebtn > a {
+  text-decoration: none;
+  margin: 5rem auto;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  width: 50%;
+  color: var(--white);
+  background-color: var(--color3);
+  transition-duration: 500ms;
+}
+
+.servicebtn > a:hover {
+  border: 1px solid var(--color3);
+  background-color: var(--white);
+  color: var(--color3);
+}
+
+@media (max-width: 768px) {
+  .serviceSection {
+    margin: 1rem auto 4rem auto;
+  }
+  .serviceSection > h1 {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+  .service-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .serv-divs {
+    margin: 1rem auto;
+  }
+  .servicebtn > h6 {
+    width: 90%;
+    margin: auto auto 2rem auto;
+    height: fit-content;
+    font-size: 1.3rem;
+  }
+  .servicebtn > a {
+    text-decoration: none;
+    margin: 5rem auto;
+    padding: 0.6rem 3rem;
+    font-size: 1.3rem;
+  }
+}

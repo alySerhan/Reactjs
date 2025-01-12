@@ -1,0 +1,9 @@
+@import "../../variables.css";
+
+#booking-form {
+  font-family: var(--font);
+  padding: 1rem;
+}
+#booking-form h2 {
+  margin: auto auto 2rem auto;
+}

@@ -1,0 +1,14 @@
+@import "../../variables.css";
+
+.Product-main {
+  background-color: var(--white);
+  text-align: center;
+  font-family: var(--font);
+  margin-bottom: 2rem;
+}
+.Product-main hr {
+  width: 50%; /* Set width to 50% */
+  height: fit-content;
+  margin: auto auto 3rem auto; /* Center the hr and add vertical space */
+  border-top: 3px dashed red;
+}

@@ -1,0 +1,77 @@
+@import "../../../variables.css";
+.product-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1000; /* Ensure it appears above other content */
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.btn-secondary {
+  margin: 2rem auto;
+  background-color: var(--color4);
+  color: var(--color3);
+}
+.product-detail button {
+  margin-top: 10px;
+}
+
+.det-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.image-det img {
+  width: 20rem;
+}
+
+.pro-det-btn {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.det-price {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.quantity-btn button {
+  border: none;
+  background-color: var(--color3);
+  color: var(--white);
+
+  font-size: 1rem;
+  font-weight: 900;
+  height: 2rem;
+}
+.quantity-btn input {
+  height: 2rem;
+  width: 3rem;
+  text-align: center;
+  background-color: var(--color3);
+  border: none;
+  color: var(--white);
+}
+.quantity-btn label {
+  margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+  #btn-close {
+    margin: 1rem auto;
+  }
+  .det-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .pro-det-btn {
+    margin: 1rem auto;
+  }
+  .pro-det-btn button {
+    margin: 1rem auto;
+  }
+}

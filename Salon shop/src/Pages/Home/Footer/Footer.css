@@ -1,0 +1,52 @@
+@import "../../../variables.css";
+footer {
+  background-color: var(--color2);
+  font-family: var(--font);
+  color: var(--color3);
+  padding: 2rem;
+}
+.ftr-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ftr-two {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.text-reset {
+  color: var(--color3); /* Ensure default color matches your theme */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+.text-center a.text-reset:hover {
+  color: red; /* Change color on hover */
+}
+
+footer i {
+  transition-duration: 500ms;
+}
+footer i:hover {
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 768px) {
+  .ftr-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+
+  .ftr-two {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

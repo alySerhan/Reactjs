@@ -1,0 +1,66 @@
+@import "../../../variables.css";
+
+.shop {
+  font-family: var(--font);
+  text-align: center;
+  background-color: var(--white);
+  margin: 3rem auto;
+}
+
+.shop hr {
+  width: 50%; /* Set width to 50% */
+  height: fit-content;
+  margin: auto auto 3rem auto; /* Center the hr and add vertical space */
+  border-top: 3px dashed red;
+}
+.shop a {
+  text-decoration: none;
+  color: var(--color3);
+  border: 2px solid var(--color3);
+  background-color: transparent;
+  padding: 0.3rem 1rem;
+  margin: 3rem auto;
+  transition-duration: 400ms;
+}
+.shop a:hover {
+  transform: scale(1.4);
+  background-color: var(--color3);
+  color: var(--white);
+}
+
+.shop-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.shop-menu .product-item {
+  width: 90%;
+}
+.shop-menu a {
+  border: none;
+}
+.shop-menu:hover a:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+.shop-menu:hover p {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .shop-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .shop-menu .product-item {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+}

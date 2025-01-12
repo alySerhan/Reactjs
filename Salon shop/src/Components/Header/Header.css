@@ -1,0 +1,37 @@
+@import "../../variables.css";
+
+.navbar {
+  background-color: var(--white);
+}
+.navbar-brand {
+  padding-right: 3rem;
+}
+.nav-link {
+  color: var(--color3);
+  font-weight: 900;
+  font-family: var(--font);
+  margin-right: 2rem;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--white);
+}
+.nav-link:hover {
+  color: var(--color3);
+  opacity: 0.8;
+  border-bottom: 2px solid var(--color3);
+}
+
+.cart-div {
+  padding-right: 10rem;
+}
+
+#navbarNavAltMarkup {
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .navbar-brand {
+    padding-right: 1rem;
+  }
+  .cart-div {
+    padding-right: 1rem;
+  }
+}
