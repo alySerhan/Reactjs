@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/******************* home ******************/
+.mobile-div {
+  display: none;
+}
+
+.cont111 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.Home-one {
+  background: rgb(13, 103, 155);
+  background: radial-gradient(
+    circle,
+    rgba(13, 103, 155, 1) 0%,
+    rgba(0, 85, 164, 1) 29%,
+    rgba(0, 17, 72, 1) 100%
+  );
+  height: 100vh;
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+}
+
+/******************* dekstop ***********************************/
+.Desktop-1 {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+}
+.right1,
+.left1 {
+  height: 100vh;
+}
+.cont-des-1 {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center; /* Center text */
+}
+.temp-title > h1 {
+  font-size: 8rem;
+
+  margin: 0;
+  color: aliceblue;
+}
+.temp-det {
+  padding-right: 2rem;
+}
+.temp-det > p {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: left;
+  margin: 0.2rem 0;
+  font-weight: bold;
+}
+.astromy > p {
+  color: aliceblue;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 0.2rem 0;
+}
+.date > p {
+  color: aliceblue;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  margin: 0;
+  text-align: left;
+}
+.astromy {
+  margin: 2rem auto;
+}
+/******  weather mobile**********/
+
+@media only screen and (max-width: 820px) {
+  .desktopcon {
+    display: none;
+  }
+  .mobile-div {
+    display: block;
+    width: 100%;
+  }
+  .Home-one {
+    background: rgb(14, 132, 201);
+    background: radial-gradient(
+      circle,
+      rgba(14, 132, 201, 1) 0%,
+      rgba(0, 85, 164, 1) 50%,
+      rgba(0, 17, 72, 1) 100%
+    );
+    height: fit-content;
+  }
+}
+
+/*MobileWeather1 */
+
+.weather-container-1 {
+  margin: 0;
+}
+
+.city-name-1 {
+  color: white;
+  margin: 0 auto 0 auto;
+  font-size: 3.3rem;
+  padding: 4rem 0 0 0;
+}
+
+.temperature-1 {
+  color: white;
+  font-size: 5rem;
+  margin: 0 auto;
+}
+
+.date-1 {
+  color: white;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+
+.weather-icon-1 {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png);
+  background-size: cover;
+}
+
+.icon-description-1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  color: white;
+  opacity: 0.9;
+  margin: 0;
+  text-align: center;
+}
+
+.weather-details-1 {
+  display: flex;
+  border: 1px dotted white;
+  border-radius: 25px;
+  margin: 4rem 1rem;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 57, 0.5);
+}
+
+.detail-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 20%;
+}
+
+.detail-icon-1 {
+  width: 2rem;
+  padding: 0;
+  margin: 0.5rem auto;
+}
+
+.detail-value-1 {
+  color: white;
+  margin: 0.2rem auto;
+}
+
+.detail-label-1 {
+  color: white;
+  margin: 0.2rem auto;
+  opacity: 0.7;
+}
+
+/*MobileWeather2 */
+.weekly-container {
+  width: 96%;
+}
+.weekly-container div {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.detail-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin: auto 1rem 2rem 1rem;
+}
+.detail-card {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+.detail-title {
+  display: flex;
+  background: none;
+  width: 100%;
+  margin: 0.2rem auto;
+  justify-content: start;
+  text-align: center;
+}
+
+.detail-title img {
+  padding-top: 0.7rem;
+}
+
+.detail-content {
+  background: none;
+}
+
+.detail-content p {
+  font-size: 2rem;
+  text-align: left;
+  margin: 0 auto 1rem auto;
+  padding-left: 1rem;
+}
+
+.detail-title p {
+  font-size: 1.2rem;
+}
+
+.btn-det {
+  color: white;
+  border: none;
+  background-color: transparent;
+}
