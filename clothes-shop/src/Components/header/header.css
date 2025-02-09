@@ -1,0 +1,129 @@
+.marquee {
+  height: 3rem;
+  background-color: var(--black);
+  color: var(--white);
+  margin: auto;
+  align-content: center;
+  overflow-x: hidden;
+}
+.moving-text {
+  display: inline-block;
+  width: auto 4rem; /* Change to auto to prevent flex issues */
+  animation: move 15s linear infinite;
+}
+
+.moving-text p {
+  white-space: nowrap; /* Prevent wrapping of text */
+  display: inline; /* Use inline to avoid block behavior */
+  margin: 0; /* Remove margin to keep elements close */
+}
+@keyframes move {
+  0% {
+    transform: translateX(100%); /* Start from 50% */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to -50% */
+  }
+}
+
+nav {
+  position: sticky;
+  background-color: var(--white);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3);
+}
+.navbar {
+  z-index: 1000;
+}
+.nav2 {
+  position: -webkit-sticky;
+  width: 100%;
+}
+.nav2::after {
+  top: 0;
+}
+nav a {
+  color: var(--black);
+  transition-duration: 550ms;
+}
+nav a:hover {
+  color: var(--black);
+  opacity: 0.7;
+  transform: scale(1.08);
+}
+
+nav button {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+nav button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.nav-btns {
+  align-content: center;
+  gap: 2rem;
+  display: flex;
+}
+.nav-btns form {
+  display: flex;
+}
+.nav-btns button {
+  background-color: transparent;
+}
+.nav-btns i {
+  align-content: center;
+  transition-duration: 300ms;
+}
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  align-content: center; /* Allows positioning relative to the icon */
+}
+
+.item-count {
+  position: absolute;
+  top: -3px; /* Adjust this value to move it higher or lower */
+  right: -10px; /* Aligns it to the right of the icon */
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0); /* Optional: text color */
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2px 4px; /* Optional: padding around the number */
+  font-size: 12px; /* Adjust font size as needed */
+}
+.nav-btns i:hover {
+  transform: scale(1.2);
+}
+#for-mobile {
+  display: none;
+}
+
+nav input[type="search"] {
+  background-color: rgba(241, 235, 235, 0.511);
+}
+
+@media screen and (max-width: 991px) {
+  #for-desktop {
+    display: none;
+  }
+  #for-mobile {
+    display: flex;
+  }
+  .nav-btns {
+    margin: 2rem auto 1rem auto;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+  }
+  .nav-btns form {
+    width: 100%;
+    display: flex;
+  }
+  .nav-btns i {
+    font-size: 1.3rem;
+  }
+}

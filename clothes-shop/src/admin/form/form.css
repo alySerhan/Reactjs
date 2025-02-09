@@ -1,0 +1,41 @@
+.admin-form {
+  margin: 4rem auto;
+}
+.admin-form h1 {
+  margin: 2rem auto;
+}
+.form-div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 20%;
+  flex-direction: column;
+}
+.form-div input {
+  width: 100%;
+}
+.form-div p {
+  margin: 0.4rem auto;
+  text-align: start;
+}
+
+.admin-form input[type="checkbox"] {
+  accent-color: var(--red);
+}
+
+.admin-form button {
+  background-color: red;
+}
+
+.admin-form button:hover {
+  background-color: yellow;
+}
+@media screen and (max-width: 768px) {
+  .form-div {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 60%;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,118 @@
+.favorites {
+  margin: 4rem auto;
+}
+.favorites-container {
+  width: 80%;
+  margin: auto;
+  gap: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.favorite-product {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+}
+.favorite-product img {
+  object-fit: cover;
+  margin: auto;
+  width: 20rem;
+}
+.favorites a {
+  padding: 0.4rem 1rem;
+}
+.favorites a:hover {
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .products h1 {
+    font-size: 2rem;
+  }
+  .favorites-container {
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .favorite-product img {
+    object-fit: cover;
+    margin: 1rem auto;
+    width: 8rem;
+  }
+  .favorite-product {
+    width: 100%;
+  }
+  .product-btns {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .product-like {
+    color: var(--black);
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    z-index: 10;
+    align-items: end;
+  }
+  .product-text {
+    width: 100%;
+    margin: auto;
+  }
+  .product-name {
+    margin: auto;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .price-offer {
+    margin: 0.5rem auto 1rem auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .offer {
+    color: var(--red);
+    text-decoration: line-through;
+    margin: auto auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .product-price {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .product-btns button {
+    font-size: 16px;
+    transition-duration: 550ms;
+    border-radius: 4px;
+  }
+  .product-btns button:hover {
+    transform: scale(1.06);
+  }
+
+  .product-details {
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 3px;
+  }
+}

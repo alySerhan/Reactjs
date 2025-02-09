@@ -1,0 +1,73 @@
+.bybrand {
+  margin: 5rem auto;
+}
+.bybrand h1 {
+  color: var(--black);
+  font-weight: bold;
+
+  margin: auto 4rem;
+  text-align: left;
+}
+
+.bybrands-container {
+  margin: 3rem auto;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(255, 0, 0, 0.224);
+}
+.bybrands-container::-webkit-scrollbar {
+  display: none;
+}
+.brand {
+  flex: 1 1 10rem;
+  align-content: center;
+  margin: auto;
+  transition-duration: 550ms;
+}
+.brand img {
+  width: 10rem;
+}
+.brand:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 800px) {
+  .bybrand h1 {
+    font-size: 2rem;
+    margin: auto auto auto 1rem;
+  }
+  .bybrands-container {
+    margin: 2rem auto 0 auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    scrollbar-width: none;
+    background-color: rgba(255, 0, 0, 0.105);
+  }
+  .bybrands-container .brand:first-child {
+    margin-left: 20rem;
+  }
+  .brand {
+    flex: 1 1 12rem;
+    align-content: center;
+    margin: auto;
+  }
+  .brand:first-child {
+    margin-left: 4rem;
+  }
+  .brand:last-child {
+    margin-right: 2rem;
+  }
+  .brand img {
+    width: 6rem;
+  }
+}

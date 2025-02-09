@@ -1,0 +1,17 @@
+td {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.table-cont {
+  overflow-x: scroll;
+}
+
+.table-cont tr:hover {
+  background-color: rgb(187, 187, 187);
+}
+.img-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
